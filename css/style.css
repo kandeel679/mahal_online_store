@@ -8,13 +8,13 @@
   --white: #fff;
   --gray: #777;
   --transparent-white: #fff9;
-  --dark-bg: rgba(0 0 0 .7);
+  --dark-bg: rgba(0, 0, 0, .7);
   --light-bg: #eee;
   /* rem refers to root em, the base font size (usually 16) */
   --border: .1rem solid var(--black);
   /* rgba() is an alias for rgb() */
-  --box-shadow: 0 .5rem 1rem rgb(0 0 0 .1);
-  --text-shadow: 0 1.5rem 3rem rgb(0 0 0 .1);
+  --box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+  --text-shadow: 0 1.5rem 3rem rgb(0, 0, 0, .1);
 }
 
 * {
@@ -46,6 +46,42 @@ html {
     * + editing scrollbar is not supported in Safari */
 }
 
-.header {
+.main-header {
+  /* sticky position keeps header visible */
   position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  /* color, padding, shadow */
+  background-color: var(--white);
+  list-style-type: none;
+  display: flex;
+  /* TB LR */
+  padding: 2rem 10%;
+  box-shadow: var(--box-shadow);
+  /* aligns all items along the flexbox cross-axis */
+  align-items: center;
+  /* aligns all items along the flexbox main-axis */
+  justify-content: space-between;
+}
+
+.main-header__logo {
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+.main-header__nav-item {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+.main-header__nav-link {
+  color: var(--black);
+}
+
+.main-header__nav-link:hover {
+  color: var(--gray);
 }
