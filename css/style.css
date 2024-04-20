@@ -1,0 +1,51 @@
+/* Google Fonts Roboto font, non-italic */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+  --font-family: "Roboto", sans-serif;
+  --main-color: #8e44ad;
+  --black: #222;
+  --white: #fff;
+  --gray: #777;
+  --transparent-white: #fff9;
+  --dark-bg: rgba(0 0 0 .7);
+  --light-bg: #eee;
+  /* rem refers to root em, the base font size (usually 16) */
+  --border: .1rem solid var(--black);
+  /* rgba() is an alias for rgb() */
+  --box-shadow: 0 .5rem 1rem rgb(0 0 0 .1);
+  --text-shadow: 0 1.5rem 3rem rgb(0 0 0 .1);
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  /** border-box means elements will never exceed their
+      specified width, even with padding and border
+    * default is content-box (for most elements), 
+      where padding and border are rendered outside 
+      the specified width*/
+  box-sizing: border-box;
+  /** outline (shorthand) is an accessibiity-focused line 
+      outside the border
+    * its size is always outside the element dimensions,
+      and you cannot control individual outline sides  */
+  outline: none;
+  border: none;
+  /** text-decoration (shorthand) is for underlining and overlining text
+    * lines are drawn around (outside) text, so lines set by
+      parent elements cannot be removed by children */
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: scroll;
+  /** Avoiding editing scrollbar due to accessibility concerns
+    * + editing scrollbar is not supported in Safari */
+}
+
+.header {
+  position: sticky;
+}
