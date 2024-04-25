@@ -13,28 +13,38 @@
     include("header.php");
     ?>
     <main>
-        <h1>Home</h1>
-        <p>Welcome to our travel website. We offer a wide range of travel packages to suit your needs.</p>
-        <p>Click on the links above to learn more about us, our packages, and how to book.</p>
-        <p>Enjoy your stay!</p>
-        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione nisi eos, doloremque voluptates explicabo ab molestiae nemo eius libero alias esse necessitatibus reprehenderit sequi maiores sed. Fuga iusto facere commodi!</p>
-        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione nisi eos, doloremque voluptates explicabo ab molestiae nemo eius libero alias esse necessitatibus reprehenderit sequi maiores sed. Fuga iusto facere commodi!</p>
-        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione nisi eos, doloremque voluptates explicabo ab molestiae nemo eius libero alias esse necessitatibus reprehenderit sequi maiores sed. Fuga iusto facere commodi!</p>
-        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione nisi eos, doloremque voluptates explicabo ab molestiae nemo eius libero alias esse necessitatibus reprehenderit sequi maiores sed. Fuga iusto facere commodi!</p>
-        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione nisi eos, doloremque voluptates explicabo ab molestiae nemo eius libero alias esse necessitatibus reprehenderit sequi maiores sed. Fuga iusto facere commodi!</p>
-        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione nisi eos, doloremque voluptates explicabo ab molestiae nemo eius libero alias esse necessitatibus reprehenderit sequi maiores sed. Fuga iusto facere commodi!</p>
-        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione nisi eos, doloremque voluptates explicabo ab molestiae nemo eius libero alias esse necessitatibus reprehenderit sequi maiores sed. Fuga iusto facere commodi!</p>
-        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione nisi eos, doloremque voluptates explicabo ab molestiae nemo eius libero alias esse necessitatibus reprehenderit sequi maiores sed. Fuga iusto facere commodi!</p>
-        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione nisi eos, doloremque voluptates explicabo ab molestiae nemo eius libero alias esse necessitatibus reprehenderit sequi maiores sed. Fuga iusto facere commodi!</p>
-        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione nisi eos, doloremque voluptates explicabo ab molestiae nemo eius libero alias esse necessitatibus reprehenderit sequi maiores sed. Fuga iusto facere commodi!</p>
-        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione nisi eos, doloremque voluptates explicabo ab molestiae nemo eius libero alias esse necessitatibus reprehenderit sequi maiores sed. Fuga iusto facere commodi!</p>
-        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione nisi eos, doloremque voluptates explicabo ab molestiae nemo eius libero alias esse necessitatibus reprehenderit sequi maiores sed. Fuga iusto facere commodi!</p>
-        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione nisi eos, doloremque voluptates explicabo ab molestiae nemo eius libero alias esse necessitatibus reprehenderit sequi maiores sed. Fuga iusto facere commodi!</p>
-        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione nisi eos, doloremque voluptates explicabo ab molestiae nemo eius libero alias esse necessitatibus reprehenderit sequi maiores sed. Fuga iusto facere commodi!</p>
+        <form action="hotels_search.php" method="post">
+            <fieldset class="fieldset-travel-details">
+                <legend>Search for Hotels</legend>
+                <div>
+                    <label for="destination">Destination:</label>
+                    <input type="text" name="destination" id="destination" required>
+                </div>
+                <!-- <div id="check-in-out"> -->
+                    <div>
+                        <label for="checkin">Check-in:</label>
+                        <input type="date" name="checkin" id="checkin" required>
+                    </div>
+                    <div>
+                        <label for="checkout">Check-out:</label>
+                        <input type="date" name="checkout" id="checkout" required>
+                    </div>
+                <!-- </div> -->
+                <!-- <div id="guests-rooms"> -->
+                    <div>
+                        <label for="guests">Guests:</label>
+                        <input type="number" name="guests" id="guests" min="1" required>
+                    </div>
+                    <div>
+                        <label for="rooms">Rooms:</label>
+                        <input type="number" name="rooms" id="rooms" min="1" required>
+                    </div>
+                <!-- </div> -->
+                <button type="submit">Search</button>
+            </fieldset>
+        </form>
     </main>
-    <footer>
-        &copy; 2020 Travel
-    </footer>
+    <?php include("footer.php") ?>
 </body>
 
 </html>

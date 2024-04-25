@@ -1,9 +1,8 @@
 <header>
-    <a href="index.php" class="logo">TRAVEL</a>
+    <a href="index.php" class="logo">HOTELS</a>
     <nav class="navbar">
         <a href="index.php">Home</a>
-        <a href="about.php">About</a>
-        <a href="packages.php">Packages</a>
-        <a href="book.php">Book</a>
+        <a href="cities.php">Cities</a>
+        <a href="hotels.php">Hotels</a>
     </nav>
 </header>
