@@ -12,7 +12,7 @@
     <?php include "html/header.html"; ?>
     <main>
         <?php
-        include "html/search-bar.html";
+        include "php/search-bar.php";
         include "html/about-us.html";
         ?>
     </main>
